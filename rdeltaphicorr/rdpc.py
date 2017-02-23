@@ -360,7 +360,7 @@ class RDeltaPhiCorrelator:
                                                                PF=self.PF,
                                                                mask=self.mask,
                                                                sigma=self.sigma)
-        if compute_imgb is not None:
+        if compute_imgb:
             self.avgimgb, self.avgimg2b, self.ivsnb = _runningaverage(imgs,
                                                                    PF=self.PF,
                                                                    mask=self.mask,
